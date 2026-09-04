@@ -7,7 +7,8 @@ fact=1
 
 for (( i=1; i<=n; i++ ))
 do
-    (( fact *= i ))
+# fact=$((fact * i)) 
+    (( fact *= i )) 
 done
-
+ 
 echo "Factorial of $n = $fact"
